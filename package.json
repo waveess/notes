@@ -4,18 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/waveess/note-taker.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/waveess/note-taker/issues"
-  },
-  "homepage": "https://github.com/waveess/note-taker#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.0.1"
+  }
 }

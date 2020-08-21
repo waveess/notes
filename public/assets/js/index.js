@@ -15,14 +15,21 @@ var getNotes = function() {
   });
 };
 
+
+
 // A function for saving a note to the db
 var saveNote = function(note) {
   return $.ajax({
     url: "/api/notes",
     data: note,
     method: "POST"
+
+    
   });
+
 };
+
+
 
 // BONUS A function for deleting a note from the db
 var deleteNote = function(id) {
@@ -61,6 +68,10 @@ var handleNoteSave = function() {
     renderActiveNote();
   });
 };
+
+
+
+
 
 // BONUS Delete the clicked note
 var handleNoteDelete = function(event) {
